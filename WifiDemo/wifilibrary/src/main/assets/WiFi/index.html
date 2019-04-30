@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>WifiDemo</title>
+        <link rel="shortcut icon" type="image/x-icon" href="/image/logo.png">
+        <link rel="stylesheet" type="text/css" href="css/cssreset.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+        <script type="text/javascript" src="js/html5shiv.js"></script>
+        <script type="text/javascript" src="js/respond.min.js"></script>
+        <script type="text/javascript" src="js/dropzone.js"></script>
+        <script type="text/javascript" src="js/Log.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="js/download.js"></script>
+        <script type="text/javascript" src="js/base.js"></script>
+          
+    </head>
+    <body>
+        <header class="top">
+            <div class="content">
+                <h1>WifiDemo</h1>
+            </div>
+        </header>
+        <section class="file_list content">
+            <div class="my_func clearfix">
+                <button id="dropz" class="upload">上传</button>
+                <script>
+                    uploadConfig = (function(){
+                        return{
+                            hostDir:'',
+                            api:function(){
+                                var host = this.hostDir;
+                                return '/uploadFile';
+                            }
+                        }
+                    })(window);
+
+                    $("#dropz").dropzone({
+                        url: uploadConfig.api(),
+                        maxFiles: 100,
+                        maxFilesize: 512,
+                        acceptedFiles: ".dwg,.dxf",
+                        init: function() {
+                            this.on("success", function(file,data) {
+                                var size=data.data[0].size/(1024*1024);
+                                size = size.toFixed(2);
+                                var time=data.data[0].time;
+                                time=new Date(time).toLocaleString();
+                                if ($('.arr_box').hasClass('img_file')) {
+                                    var img_str=' <li value="'+data.data[0].index+'">'+
+                                    '<div class="container" title="'+decodeURI(data.data[0].fileName)+'">'+
+                                    '<a href="/viewpdf/web/viewer.html?value='+data.data[i].index+'" target="_blank" class="title_link"><img src="image/wenjian.png"/></a>'+
+                                    '<h4 class="title_text"><a href="/viewpdf/web/viewer.html?value='+data.data[i].index+'" target="_blank" class="title_link">'+decodeURI(data.data[i].fileName)+'</a></h4>'+
+                                    '<span><img src="image/wenjian_gengduo.png"/></span>'+
+                                    '</div>'+
+                                    '<div class="order">'+
+                                    // '<p>重命名</p>'+
+                                    '<p><a href="'+uploadConfig.api()+'/'+data.data[0].index+'" class="img_down_btn">下载</a></p>'+
+                                    // '<p>删除</p>'+
+                                    '</div>'+
+                                    '</li>';
+                                    $('.arr_box').prepend(img_str);
+                                    sub_text('title_link',13);
+                                }else{
+                                    var list_str='<li class="clearfix" value="'+data.data[0].index+'">'+
+                                    '<div class="col-1">'+
+                                    // '<span class="check_box"></span>'+
+                                    <!--'<b title="'+decodeURI(data.data[i].fileName)+'"><a href="/viewpdf/web/viewer.html?value='+data.data[i].index+'" target="_blank" class="title_link">'+decodeURI(data.data[i].fileName)+'</a></b>'+-->
+                                    '<b title="'+decodeURI(data.data[i].fileName)+'"></b>'+
+                                    '<p class="btn">'+
+                                    '<a class="xiazai" href="'+uploadConfig.api()+'/'+data.data[0].index+'"></a>'+
+                                    '</p>'+
+                                    '</div>'+
+                                    '<p class="col-2">'+
+                                    '<span>'+size+'MB</span>'+
+                                    '</p>'+
+                                    '<p class="col-3">'+
+                                    '<span>'+time+'</span>'+
+                                    '</p>'+
+                                    '</li>';
+                                    $('.arr_box').prepend(list_str);
+                                };
+
+                            });
+                        }
+                    });
+                </script>
+
+    
+                <!-- <span class="create">新建文件夹</span> -->
+                <!-- <span class="more">更多</span> -->
+                <!-- <span class="download_all">下载</span> -->
+                <!-- <div class="search">
+                    <input type="text" placeholder="搜索"/>
+                    <span></span>
+                </div> -->
+                <span class="refresh" action="/uploadFile"></span>
+                <div class="list_toggle clearfix right">
+                    <span class="img_list left"></span>
+                    <span class="title_list right current"></span>
+                </div>
+                
+            </div>
+            <p class="l_2px head c_fff clearfix">
+                <span class="left">全部文件</span>
+                <span class="right">已加载0个</span>
+            </p>
+            <!-- <p class="l_2px c_fff all_check">
+                <span class="check_box all_box"></span>全部
+            </p> -->
+            
+            <ul class="arr_box img_file clearfix" id="img_file">
+                
+            </ul>
+        </section>
+        <a href="#" class="back_top"><img src="image/dingbuzhida.png"/></a>
+        
+    </body>
+    
+</html>
