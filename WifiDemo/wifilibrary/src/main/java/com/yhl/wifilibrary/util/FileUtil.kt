@@ -1,10 +1,10 @@
-package com.hudun.wifilibrary.util
+package com.yhl.wifilibrary.util
 
 import android.content.ContentResolver
 import android.content.Context
 import android.net.Uri
 import android.provider.MediaStore
-import com.hudun.wifilibrary.bean.FileItem
+import com.yhl.wifilibrary.bean.FileItem
 import java.io.File
 import java.io.FileFilter
 import java.io.FileInputStream
@@ -12,7 +12,7 @@ import java.io.FileOutputStream
 
 /**
  * Created by Administrator on 2017/9/11/011.
- * @author xiaoxiaoying
+ * @author yhl
  */
 object FileUtil {
     fun readFile(dir: File, mExtEntries: ArrayList<String>, returnArrayList: ArrayList<FileItem>) {

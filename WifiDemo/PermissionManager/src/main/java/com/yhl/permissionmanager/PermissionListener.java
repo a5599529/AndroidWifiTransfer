@@ -1,4 +1,4 @@
-package com.hudun.permissionmanager;
+package com.yhl.permissionmanager;
 
 import java.util.List;
 

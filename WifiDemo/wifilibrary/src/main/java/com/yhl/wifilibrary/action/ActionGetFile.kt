@@ -1,9 +1,9 @@
-package com.hudun.wifilibrary.action
+package com.yhl.wifilibrary.action
 
 import android.content.Context
-import com.hudun.wifilibrary.DBManger
-import com.hudun.wifilibrary.util.MimeTypeUtils
-import com.hudun.wifilibrary.util.Util
+import com.yhl.wifilibrary.DBManger
+import com.yhl.wifilibrary.util.MimeTypeUtils
+import com.yhl.wifilibrary.util.Util
 import fi.iki.elonen.NanoHTTPD
 import fi.iki.elonen.NanoHTTPD.Response.Status.OK
 import java.io.File
@@ -12,7 +12,7 @@ import java.net.URLEncoder
 
 /**
  * Created by Administrator on 2017/7/10/010.
- * @author xiaoxiaoying
+ * @author yhl
  */
 class ActionGetFile(context: Context, session: NanoHTTPD.IHTTPSession) {
     private var mContext: Context? = null

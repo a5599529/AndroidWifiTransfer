@@ -1,4 +1,4 @@
-package com.hudun.wifi.myapplication
+package com.yhl.wifi.myapplication
 
 import android.support.test.InstrumentationRegistry
 import android.support.test.runner.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getTargetContext()
-        assertEquals("com.hudun.wifi.myapplication", appContext.packageName)
+        assertEquals("com.yhl.wifi.myapplication", appContext.packageName)
     }
 }

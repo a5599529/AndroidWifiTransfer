@@ -1,16 +1,16 @@
-package com.hudun.wifilibrary.broadcast
+package com.yhl.wifilibrary.broadcast
 
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import android.util.Log
-import com.hudun.wifilibrary.listener.NetworkListener
-import com.hudun.wifilibrary.util.NetworkUtil
-import com.hudun.wifilibrary.util.Util
+import com.yhl.wifilibrary.listener.NetworkListener
+import com.yhl.wifilibrary.util.NetworkUtil
+import com.yhl.wifilibrary.util.Util
 
 /**
  * Created by Administrator on 2017/7/7/007.
- * @author xiaoxiaoying
+ * @author yhl
  */
 class WifiReceiver : BroadcastReceiver() {
     private var mNetworkListener: NetworkListener? = null

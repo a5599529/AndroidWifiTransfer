@@ -1,11 +1,11 @@
-package com.hudun.wifilibrary.util;
+package com.yhl.wifilibrary.util;
 
 import android.content.Context;
 import android.content.res.AssetManager;
 import android.os.Environment;
 import android.util.Log;
 
-import com.hudun.wifilibrary.bean.FileItem;
+import com.yhl.wifilibrary.bean.FileItem;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by xiaoxiaoying on 2017/2/16/016.
+ * Created by yhl on 2017/2/16/016.
  */
 
 public class SDCardUtil {

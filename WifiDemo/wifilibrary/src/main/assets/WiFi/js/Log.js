@@ -1,5 +1,5 @@
 /**
- * Created by xiaoxiaoying on 2016/11/24/024.
+ * Created by yhl on 2016/11/24/024.
  */
 
 var Log = {

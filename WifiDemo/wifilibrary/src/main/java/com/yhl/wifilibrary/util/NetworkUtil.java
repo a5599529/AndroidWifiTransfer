@@ -1,4 +1,4 @@
-package com.hudun.wifilibrary.util;
+package com.yhl.wifilibrary.util;
 
 import android.content.Context;
 import android.net.ConnectivityManager;
@@ -7,9 +7,9 @@ import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
 
 /**
- * Created by xiaoxiaoying on 2016/6/15.
+ * Created by yhl on 2016/6/15.
  *
- * @author xiaoxiaoying
+ * @author yhl
  */
 public class NetworkUtil {
     private ConnectivityManager connectivityManager;

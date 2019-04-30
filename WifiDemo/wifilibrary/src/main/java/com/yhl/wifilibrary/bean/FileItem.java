@@ -1,15 +1,15 @@
-package com.hudun.wifilibrary.bean;
+package com.yhl.wifilibrary.bean;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 
-//import cn.hudun.androidpdfxunjie.widget.CollectSlideView;
-//import cn.hudun.androidpdfxunjie.widget.RecordSlideView;
+//import cn.yhl.androidpdfxunjie.widget.CollectSlideView;
+//import cn.yhl.androidpdfxunjie.widget.RecordSlideView;
 
 /**
- * Created by xiaoxiaoying on 2017/2/16/016.
+ * Created by yhl on 2017/2/16/016.
  *
- * @author xiaoxiaoying
+ * @author yhl
  */
 
 public class FileItem {

@@ -13,14 +13,14 @@
 * See the License for the specific language governing permissions and
 * limitations under the License.
 */
-package com.hudun.wifilibrary.util
+package com.yhl.wifilibrary.util
 
 import java.util.HashMap
 import java.util.Locale
 
 /**
  * Created by Administrator on 2017/7/6/006.
- * @author xiaoxiaoying
+ * @author yhl
  */
 
 object MimeTypeUtils {

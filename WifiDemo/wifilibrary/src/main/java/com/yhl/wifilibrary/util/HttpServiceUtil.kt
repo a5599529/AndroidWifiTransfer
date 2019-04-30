@@ -1,19 +1,19 @@
-package com.hudun.wifilibrary.util
+package com.yhl.wifilibrary.util
 
 import android.content.Context
 import android.content.res.AssetManager
 import android.text.TextUtils
-import com.hudun.wifilibrary.action.ActionDownloadFile
-import com.hudun.wifilibrary.action.ActionFileList
-import com.hudun.wifilibrary.action.ActionGetFile
-import com.hudun.wifilibrary.util.Util
+import com.yhl.wifilibrary.action.ActionDownloadFile
+import com.yhl.wifilibrary.action.ActionFileList
+import com.yhl.wifilibrary.action.ActionGetFile
+import com.yhl.wifilibrary.util.Util
 import fi.iki.elonen.NanoHTTPD
 import fi.iki.elonen.NanoHTTPD.Response.Status.OK
 import java.io.InputStream
 
 /**
  * Created by Administrator on 2017/7/7/007.
- * @author xiaoxiaoying
+ * @author yhl
  */
 class HttpServiceUtil(port: Int, context: Context) : NanoHTTPD(port) {
     private var mContext: Context? = null

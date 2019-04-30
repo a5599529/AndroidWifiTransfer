@@ -1,24 +1,24 @@
-package com.hudun.wifilibrary;
+package com.yhl.wifilibrary;
 
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
 
-import com.hudun.wifilibrary.bean.FileItem;
-import com.hudun.wifilibrary.config.Bookmarks;
+import com.yhl.wifilibrary.bean.FileItem;
+import com.yhl.wifilibrary.config.Bookmarks;
 
 import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 import java.util.Locale;
 
-import static com.hudun.wifilibrary.config.Bookmarks.READ_NAME;
+import static com.yhl.wifilibrary.config.Bookmarks.READ_NAME;
 
 /**
- * Created by xiaoxiaoying on 2017/3/21/021.
+ * Created by yhl on 2017/3/21/021.
  *
- * @author xiaoxiaoying
+ * @author yhl
  */
 
 public class DBManger {

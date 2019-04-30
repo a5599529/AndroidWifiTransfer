@@ -1,13 +1,13 @@
-package com.hudun.wifilibrary.config;
+package com.yhl.wifilibrary.config;
 
 
-import com.hudun.wifilibrary.bean.FileItem;
+import com.yhl.wifilibrary.bean.FileItem;
 
 import java.io.Serializable;
 import java.util.Locale;
 
 /**
- * Created by xiaoxiaoying on 2017/3/21/021.
+ * Created by yhl on 2017/3/21/021.
  */
 
 public class Bookmarks implements Serializable {

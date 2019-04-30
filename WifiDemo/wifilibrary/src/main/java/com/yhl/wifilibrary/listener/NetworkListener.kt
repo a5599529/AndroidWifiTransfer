@@ -1,8 +1,8 @@
-package com.hudun.wifilibrary.listener
+package com.yhl.wifilibrary.listener
 
 /**
  * Created by Administrator on 2017/7/7/007.
- * @author xiaoxiaoying
+ * @author yhl
  */
 interface NetworkListener {
     fun wifiStop()

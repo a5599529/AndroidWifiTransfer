@@ -1,7 +1,7 @@
-package com.hudun.wifilibrary.util
+package com.yhl.wifilibrary.util
 
-import com.hudun.wifilibrary.bean.FileItem
-import com.hudun.wifilibrary.util.MimeTypeUtils
+import com.yhl.wifilibrary.bean.FileItem
+import com.yhl.wifilibrary.util.MimeTypeUtils
 
 /**
  * Created by Administrator on 2017/7/7/007.

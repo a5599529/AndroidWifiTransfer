@@ -1,4 +1,4 @@
-package com.hudun.wifi.myapplication
+package com.yhl.wifi.myapplication
 
 import android.Manifest
 import android.app.Activity
@@ -13,16 +13,16 @@ import android.widget.ImageView
 import android.widget.RelativeLayout
 import android.widget.TextView
 import com.hd.pdfconverter.model.LocalBean.FileEntity
-import com.hudun.permissionmanager.PermissionListener
-import com.hudun.permissionmanager.PermissionUtil
-import com.hudun.wifilibrary.DBManger
-import com.hudun.wifilibrary.bean.FileItem
-import com.hudun.wifilibrary.broadcast.WifiReceiver
-import com.hudun.wifilibrary.config.Bookmarks
-import com.hudun.wifilibrary.listener.NetworkListener
-import com.hudun.wifilibrary.util.HttpServiceUtil
-import com.hudun.wifilibrary.util.NetworkUtil
-import com.hudun.wifilibrary.util.Util
+import com.yhl.permissionmanager.PermissionListener
+import com.yhl.permissionmanager.PermissionUtil
+import com.yhl.wifilibrary.DBManger
+import com.yhl.wifilibrary.bean.FileItem
+import com.yhl.wifilibrary.broadcast.WifiReceiver
+import com.yhl.wifilibrary.config.Bookmarks
+import com.yhl.wifilibrary.listener.NetworkListener
+import com.yhl.wifilibrary.util.HttpServiceUtil
+import com.yhl.wifilibrary.util.NetworkUtil
+import com.yhl.wifilibrary.util.Util
 import java.io.File
 import java.lang.Long
 import java.util.*

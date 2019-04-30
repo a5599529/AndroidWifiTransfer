@@ -1,17 +1,17 @@
-package com.hudun.wifilibrary;
+package com.yhl.wifilibrary;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
-import com.hudun.wifilibrary.config.Bookmarks;
+import com.yhl.wifilibrary.config.Bookmarks;
 
 
 /**
- * Created by xiaoxiaoying on 2017/3/21/021.
+ * Created by yhl on 2017/3/21/021.
  *
- * @author xiaoxiaoying
+ * @author yhl
  */
 
 class SqlOpenHelper extends SQLiteOpenHelper {

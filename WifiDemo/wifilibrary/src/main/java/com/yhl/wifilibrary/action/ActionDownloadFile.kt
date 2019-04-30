@@ -1,13 +1,13 @@
-package com.hudun.wifilibrary.action
+package com.yhl.wifilibrary.action
 
 import android.app.Activity
 import android.content.Context
 import android.widget.Toast
-import com.hudun.wifilibrary.DBManger
-import com.hudun.wifilibrary.bean.FileItem
-import com.hudun.wifilibrary.util.MimeTypeUtils
-import com.hudun.wifilibrary.util.SDCardUtil
-import com.hudun.wifilibrary.util.Util
+import com.yhl.wifilibrary.DBManger
+import com.yhl.wifilibrary.bean.FileItem
+import com.yhl.wifilibrary.util.MimeTypeUtils
+import com.yhl.wifilibrary.util.SDCardUtil
+import com.yhl.wifilibrary.util.Util
 import fi.iki.elonen.NanoHTTPD
 
 import java.io.File
@@ -20,7 +20,7 @@ import java.util.concurrent.Executors
 
 /**
  * Created by Administrator on 2017/7/10/010.
- * @author xiaoxiaoying
+ * @author yhl
  */
 class ActionDownloadFile(context: Context, session: NanoHTTPD.IHTTPSession?) {
     private var mContext: Context? = null
@@ -31,7 +31,7 @@ class ActionDownloadFile(context: Context, session: NanoHTTPD.IHTTPSession?) {
     init {
         this.mContext = context
         val file: File = SDCardUtil.getDirectory()
-        fPath = file.absolutePath + "/download/hudun/"
+        fPath = file.absolutePath + "/download/wifidemo/"
         val f = File(fPath)
         if (!f.exists())
             f.mkdirs()
