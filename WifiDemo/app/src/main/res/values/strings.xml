@@ -4,7 +4,7 @@
 
     <!--WifiFragment-->
     <string name="wifi">wifi</string>
-    <string name="ip_hint">迅捷CAD看图提供Wi-Fi传输共享数据服务，请用任意浏览器访问如上地址（必须是在同一网络环境下），上传的文件将被存放在SD卡的[download/hudun]文件夹内</string>
+    <string name="ip_hint">WifiDemo提供Wi-Fi传输共享数据服务，请用任意浏览器访问如上地址（必须是在同一网络环境下），上传的文件将被存放在SD卡的[download/wifidemo]文件夹内</string>
     <string name="start_wifi">开启</string>
     <string name="close_service">关闭</string>
     <string name="close_service_hint">服务已关闭</string>
